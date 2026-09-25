@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FreeRumble</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="logo">FR</div>
+      <div>
+        <h1>FreeRumble</h1>
+        <small>Local Rumble client</small>
+      </div>
+    </div>
+    <div class="search-wrap">
+      <input id="search" placeholder="Search or paste a Rumble URL" autocomplete="off">
+    </div>
+    <button class="nav-btn active" data-view="browse">Browse</button>
+    <button class="nav-btn" data-view="live">Live</button>
+    <button class="nav-btn" data-view="subscriptions">Subscriptions</button>
+    <button class="nav-btn" data-view="history">History</button>
+    <button class="nav-btn" data-view="settings">Settings</button>
+    <button class="nav-btn" id="search-btn" data-view="search">Search</button>
+    <p class="sidebar-foot">Subscriptions, playlists-to-be, and history stay on this computer. No Rumble account required.</p>
+  </aside>
+  <main class="main">
+    <div class="topbar">
+      <h2 id="view-title">Browse Rumble</h2>
+      <span class="hint">AGPL-3.0 · inspired by FreeTube’s local-first idea</span>
+    </div>
+    <section class="content" id="content">
+      <div class="empty">Starting…</div>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.17/dist/hls.min.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
