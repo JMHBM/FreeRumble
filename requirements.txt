@@ -1,0 +1,3 @@
+# FreeRumble runs on the Python standard library.
+# Optional but strongly recommended for more reliable stream resolution:
+yt-dlp>=2024.8.0
